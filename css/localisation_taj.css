@@ -1,0 +1,39 @@
+body{
+    background-color: #FCF8E6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+img {
+    height: 700px;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+nav ul {
+    margin-top: -5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    display: block;
+    margin: auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    margin-bottom: 50px; 
+}
+
+p{
+    text-align: center;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
