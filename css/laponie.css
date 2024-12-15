@@ -285,11 +285,11 @@ footer {
   }
   
   #slide4:checked ~ .slides {
-    transform: translateX(-300%); /* Corrige pour le slide 4 */
+    transform: translateX(-300%); 
   }
   
   #slide5:checked ~ .slides {
-    transform: translateX(-400%); /* Corrige pour le slide 5 */
+    transform: translateX(-400%);
   }
   
 

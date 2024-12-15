@@ -9,7 +9,7 @@ h1 {
     font-size: 50px;
 }
 
-img {
+.matchu {
     height: 700px;
     display: block;
     margin: auto;
@@ -177,3 +177,80 @@ footer {
     font-size: 14px;
     color: #bbb;
   }
+
+  .carousel {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: 40px auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+  }
+  
+  .slides {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  .slide img {
+    width: 100%; /* Ajuste la largeur */
+    height: 100%; /* Ajuste la hauteur */
+    object-fit: cover; /* Évite les déformations */
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  #slide1:checked ~ .slides {
+    transform: translateX(0);
+  }
+  
+  #slide2:checked ~ .slides {
+    transform: translateX(-100%);
+  }
+  
+  #slide3:checked ~ .slides {
+    transform: translateX(-200%);
+  }
+  
+  #slide4:checked ~ .slides {
+    transform: translateX(-300%);
+  }
+  
+  #slide5:checked ~ .slides {
+    transform: translateX(-400%);
+  }
+  
+  .navigation {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navigation label {
+    width: 15px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .navigation label:hover {
+    background-color: #aaa;
+  }
+  
+  input[type="radio"]:checked + .navigation label {
+    background-color: #333;
+  }
+  
