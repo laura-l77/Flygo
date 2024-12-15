@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthèse - Laponie</title>
+    <link rel="stylesheet" href="../css/favoris.css">
+</head>
+<body>
+
+    <header>
+          <input type="checkbox" id="menu-affichage" class="menu-affichage">
+          <label for="menu-affichage" class="menu-btn">Menu</label>
+          <nav class="navbar">
+              <ul class="menu">
+                  <li><a href="../html/index.html">Accueil</a></li>
+                  <li>
+                      <a href="../html/taj_mahal.html">Taj Mahal</a>
+                        <ul class="submenu">
+                          <li><a href="../html/histoire_taj.html">Histoire</a></li>
+                          <li><a href="../html/localisation_taj_mahal.html">Localisation</a></li>
+                        </ul> 
+                  </li>
+                  <li><a href="../html/laponie.html">Laponie</a>
+                    <ul class="submenu">
+                      <li><a href="../html/histoire_laponie.html">Histoire</a></li>
+                      <li><a href="../html/localisation_laponie.html">Localisation</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../html/matchu_pitchu.html">Matchu Pitchu</a>
+                    <ul class="submenu">
+                      <li><a href="../html/histoire_matchu.html">Histoire</a></li>
+                      <li><a href="../html/localisation_matchu.html">Localisation</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../html/favoris.html">Favoris</a></li>
+              </ul>
+          </nav>
+      </header>
+
+        <h1>Bienvenue en Laponie</h1>
+
+
+    <section class="synthese">
+        <h2>Pourquoi privilégier la Laponie comme destination touristique ?</h2>
+        <p>
+            La Laponie, située au cœur des paysages enneigés du cercle arctique, est une destination idéale pour ceux qui recherchent une expérience unique et magique.
+            En plus de ses paysages à couper le souffle, elle offre des activités variées telles que des safaris en motoneige, des promenades en traîneau à chiens et la chance de voir les célèbres aurores boréales.
+            La Laponie est également l'endroit parfait pour rencontrer le Père Noël, une expérience inoubliable pour les familles.
+        </p>
+        <p>
+            C'est une région paisible où vous pourrez déconnecter de l'agitation de la vie quotidienne et profiter d'un environnement naturel pur et préservé.
+            Si vous aimez l'hiver et les atmosphères féeriques, la Laponie devrait être en haut de votre liste de destinations.
+        </p>
+    </section>
+
+    <section class="formulaire">
+        <h2>Formulaire de contact</h2>
+        <form action="envoyer_message.php" method="POST">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="../img/logo.png" alt="Logo FlyGo" />
+            <p>Explorez le monde avec FlyGo.</p>
+          </div>
+          <div class="footer-links">
+            <h4>Liens utiles</h4>
+            <ul>
+              <li><a href="../html/index.html">Nos destinations</a></li>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#contact">Contactez-nous</a></li>
+              <li><a href="#terms">Conditions générales</a></li>
+            </ul>
+          </div>
+          <div class="footer-socials">
+            <h4>Suivez-nous</h4>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="https://fr-fr.facebook.com/">facebook</a></li>
+                    <li><a href="https://www.instagram.com">instagram</a></li>
+                    <li><a href="https://www.twitter.com">twitter</i></a></li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 FlyGo. Tous droits réservés.</p>
+        </div>
+      </footer>
+</body>
+</html>
