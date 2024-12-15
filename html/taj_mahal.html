@@ -5,36 +5,112 @@
     <title>VPTOURS</title>
     <link rel="stylesheet" href="../css/taj_mahal.css" type="text/css">
   </head>
+
 <body>
 
-<header>
-  <h1>Taj Mahal</h1>
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Menu
-      </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="index.html">Accueil</a></li>
-          <li><a class="dropdown-item" href="taj_mahal.html">Taj Mahal</a></li>
-          <li><a class="dropdown-item" href="laponie.html">Laponie</a></li>
-          <li><a class="dropdown-item" href="matchu_pitchu.html">Matchu Pitchu</a></li>
-        </ul>
+    <header>
+      <h1>Taj Mahal</h1>
+        <input type="checkbox" id="menu-affichage" class="menu-affichage">
+        <label for="menu-affichage" class="menu-btn">Menu</label>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="../html/index.html">Accueil</a></li>
+                <li>
+                    <a href="../html/taj_mahal.html">Taj Mahal</a>
+                      <ul class="submenu">
+                        <li><a href="../html/histoire_taj.html">Histoire</a></li>
+                        <li><a href="../html/localisation_taj_mahal.html">Localisation</a></li>
+                      </ul> 
+                </li>
+                <li><a href="../html/laponie.html">Laponie</a>
+                  <ul class="submenu">
+                    <li><a href="../html/histoire_laponie.html">Histoire</a></li>
+                    <li><a href="../html/localisation_laponie.html">Localisation</a></li>
+                  </ul>
+                </li>
+                <li><a href="../html/matchu_pitchu.html">Matchu Pitchu</a>
+                  <ul class="submenu">
+                    <li><a href="../html/histoire_matchu.html">Histoire</a></li>
+                    <li><a href="../html/localisation_matchu.html">Localisation</a></li>
+                  </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <img src="../img/image_taj/visite-taj-mahal.jpg" alt="taj mahal">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrousel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+    <div class="carousel">
+      <input type="radio" name="slides" id="slide1" checked>
+      <input type="radio" name="slides" id="slide2">
+      <input type="radio" name="slides" id="slide3">
+    
+      <div class="slides">
+        <div class="slide">
+          <img src="../img/image_taj/carrousel.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+          <img src="../img/image_taj/carrousel2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+          <img src="../img/image_taj/carrousel3.jpg" alt="Image 3">
+        </div>
       </div>
-</header>
-
-<nav><ul>
-  <a href="localisation_taj_mahal.html">Loacalisation Taj Mahal</a>
-  <a href="histoire_taj.html">Histoire Taj Mahal</a>
-</ul></nav>
-
-<img src="../img/image taj mahal/visite-taj-mahal.jpg" alt="taj mahal">
-
+  
+      <div class="navigation">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
+    </div>
+    
 <p>Le Taj Mahal est l'un des monuments les plus célèbres au monde, faisant partie des l'une des 7 merveilles du monde, représent le symbole de l'amour et de l'architecture moghole. <br> Ce mausolée de marbre blanc, situé à Agra, en Inde, est réputé pour sa beauté exceptionnelle et ses détails architecturaux sophistiqués. <br> Entouré de jardins parfaitement symétriques, il offre un cadre paisible et enchanteur, renforçant l’aura mystique qui l’entoure. <br> Inscrit au patrimoine mondial de l'UNESCO depuis 1983, le Taj Mahal attire chaque année des millions de visiteurs émerveillés par son élégance intemporelle.
 </p>
 
-<footer>
-</footer>
+<p>Acheter vos ticket pour visiter le Taj Mahal :</p>
+<a href="https://www.getyourguide.com/s?cmp=bing&ad_id=78202963710362&adgroup_id=1251244854683816&bid_match_type=bb&campaign_id=434111585&device=c&feed_item_id=&keyword=www.getyourguide.fr&loc_interest_ms=149841&loc_physical_ms=126644&match_type=b&msclkid=67430c788e6b15ccfba86b2e479432f7&network=o&partner_id=CD951&target_id=dat-2330002578457591%3Aloc-66&utm_adgroup=ct%3Ddsa%7Cfn%3Df1&utm_campaign=ct%3Ddsa%7Cln%3D35%3Afr%7Ctc%3Dall&utm_keyword=www.getyourguide.fr&utm_medium=paid_search&utm_query=taj+mahal+ticket&utm_source=bing&visitor-id=RJ61QZ748D53HOKJQL7Y7857KFHPLCJI&q=%C4%80gr%C4%81&et=53017">Cliquez ici</a>
 
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="../img/logo.png" alt="Logo FlyGo" />
+      <p>Explorez le monde avec FlyGo.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Liens utiles</h4>
+      <ul>
+        <li><a href="../html/index.html">Nos destinations</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contactez-nous</a></li>
+        <li><a href="#terms">Conditions générales</a></li>
+      </ul>
+    </div>
+    <div class="footer-socials">
+      <h4>Suivez-nous</h4>
+      <div class="social-icons">
+          <ul>
+              <li><a href="https://fr-fr.facebook.com/">facebook</a></li>
+              <li><a href="https://www.instagram.com">instagram</a></li>
+              <li><a href="https://www.twitter.com">twitter</i></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 FlyGo. Tous droits réservés.</p>
+  </div>
+</footer>
 </body>
   
 </html>

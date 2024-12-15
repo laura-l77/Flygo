@@ -4,42 +4,81 @@
     <meta charset="UTF-8">
     <title>VPTOURS</title>
     <link rel="stylesheet" href="../css/histoire_laponie.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </head>
   
 <body>
 
   <header>
     <h1>Histoire de la Laponie</h1>
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Menu
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="index.html">Accueil</a></li>
-          <li><a class="dropdown-item" href="taj_mahal.html">Taj Mahal</a></li>
-          <li><a class="dropdown-item" href="laponie.html">Laponie</a></li>
-          <li><a class="dropdown-item" href="matchu_pitchu.html">Matchu Pitchu</a></li>
+    <input type="checkbox" id="menu-affichage" class="menu-affichage">
+    <label for="menu-affichage" class="menu-btn">Menu</label>
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="../html/index.html">Accueil</a></li>
+            <li>
+                <a href="../html/taj_mahal.html">Taj Mahal</a>
+                  <ul class="submenu">
+                    <li><a href="../html/histoire_taj_mahal.html">Histoire</a></li>
+                    <li><a href="../html/localisation_taj_mahal.html">Localisation</a></li>
+                  </ul> 
+            </li>
+            <li><a href="../html/laponie.html">Laponie</a>
+              <ul class="submenu">
+                <li><a href="../html/histoire_laponie.html">Histoire</a></li>
+                <li><a href="../html/localisation_laponie.html">Localisation</a></li>
+              </ul>
+            </li>
+            <li><a href="../html/matchu_pitchu.html">Matchu Pitchu</a>
+              <ul class="submenu">
+                <li><a href="../html/histoire_matchu.html">Histoire</a></li>
+                <li><a href="../html/localisation_matchu.html">Localisation</a></li>
+              </ul>
+            </li>
         </ul>
-      </div>
-  </header>
+    </nav>
+</header>
 
-<nav><ul>
-  <a href="../html/laponie.html">Laponie</a>
-  <a href="../html/localisation_laponie.html">Localisation de la Laponie</a>
-</ul></nav>
+<p>Observez les nuits les magnifiques aurores boréales <br> Pour réussir à les trouver en temps et en heures, aidez vous de ce site  <a href="https://www.aurora-maniacs.com/previsions-aurores.html">Cliquez ici</a></p>
 
+<img src="../img/image_laponie/aurore.jpg" alt="aurore boréale">
 
-<img src="../img/image laponie/aurore.jpg" alt="aurore boréale">
-<img src="../img/image laponie/village.webp" alt="village laponie">
+<p>En Laponie, l'indétournable village du père noël <br> Enmenez vos enfants visiter ce magnifique endroit pour garder cette magie de noël en vous</p>
+
+<img src="../img/image_laponie/village.webp" alt="village laponie">
 
 <p>La Laponie est habitée depuis des milliers d’années par les Samis, un peuple autochtone qui a développé un mode de vie adapté aux conditions extrêmes de l’Arctique.<br> Leur histoire est marquée par des traditions liées à l’élevage des rennes, aux contes mythologiques et à leur lien spirituel avec la nature.<br> Au fil des siècles, la Laponie a évolué pour devenir une destination touristique populaire, tout en préservant son patrimoine culturel. <br>Aujourd’hui, les Samis partagent leur art, leur musique et leur mode de vie avec les visiteurs, offrant un regard unique sur cette région riche en histoire et en mystère.
 </p>
         
 <footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="../img/logo.png" alt="Logo FlyGo" />
+      <p>Explorez le monde avec FlyGo.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Liens utiles</h4>
+      <ul>
+        <li><a href="../html/index.html">Nos destinations</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contactez-nous</a></li>
+        <li><a href="#terms">Conditions générales</a></li>
+      </ul>
+    </div>
+    <div class="footer-socials">
+      <h4>Suivez-nous</h4>
+      <div class="social-icons">
+          <ul>
+              <li><a href="https://fr-fr.facebook.com/">facebook</a></li>
+              <li><a href="https://www.instagram.com">instagram</a></li>
+              <li><a href="https://www.twitter.com">twitter</i></a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 FlyGo. Tous droits réservés.</p>
+  </div>
 </footer>
-    
 </body>
   
 </html>
